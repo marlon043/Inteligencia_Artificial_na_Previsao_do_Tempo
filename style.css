@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA e Eventos Climáticos Extremos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                🌎 IA & Clima
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#agrinho">Agrinho 2026</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Inteligência Artificial na Evolução das Previsões do Tempo</h1>
+            <p>
+                Tecnologia, sustentabilidade e inovação para proteger vidas e o meio ambiente.
+            </p>
+            <a href="#sobre" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="section">
+        <h2>Sobre o Tema</h2>
+
+        <p>
+            A Inteligência Artificial está revolucionando a meteorologia ao analisar
+            milhões de dados climáticos em poucos segundos. Isso permite previsões
+            mais precisas e rápidas, auxiliando governos, agricultores e comunidades.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Precisão</h3>
+                <p>Modelos inteligentes identificam padrões climáticos complexos.</p>
+            </div>
+
+            <div class="card">
+                <h3>Velocidade</h3>
+                <p>Análise instantânea de dados vindos de satélites e sensores.</p>
+            </div>
+
+            <div class="card">
+                <h3>Prevenção</h3>
+                <p>Alertas antecipados para enchentes, secas e tempestades.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="section destaque">
+        <h2>Benefícios da IA</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🌱 Agricultura</h3>
+                <p>
+                    Planejamento mais eficiente do plantio e da colheita.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>⚡ Energia</h3>
+                <p>
+                    Melhor gestão de recursos hídricos e energéticos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🚨 Defesa Civil</h3>
+                <p>
+                    Monitoramento contínuo de eventos climáticos extremos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="agrinho" class="section">
+        <h2>Agrinho 2026</h2>
+
+        <p>
+            O tema valoriza a inovação tecnológica, a educação, a cidadania e a
+            sustentabilidade. A Inteligência Artificial contribui diretamente para
+            a construção de comunidades mais resilientes frente às mudanças climáticas.
+        </p>
+
+        <div class="objetivos">
+            <div class="objetivo">
+                <h3>Educação</h3>
+                <p>Promover conhecimento científico e tecnológico.</p>
+            </div>
+
+            <div class="objetivo">
+                <h3>Sustentabilidade</h3>
+                <p>Uso responsável da tecnologia em benefício do planeta.</p>
+            </div>
+
+            <div class="objetivo">
+                <h3>Cidadania</h3>
+                <p>Proteção das comunidades por meio da prevenção.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section contato">
+        <h2>Contato</h2>
+
+        <form>
+            <input type="text" placeholder="Seu nome">
+            <input type="email" placeholder="Seu e-mail">
+            <textarea placeholder="Sua mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>
+            Projeto Educacional • Agrinho 2026 • Inteligência Artificial e Clima
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    background:#0d47a1;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    color:white;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.nav-menu{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.nav-menu a:hover{
+    color:#90caf9;
+}
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+}
+
+.hamburger span{
+    width:25px;
+    height:3px;
+    background:white;
+    margin:3px;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.6)
+    ),
+    url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#2196f3;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+}
+
+.section{
+    padding:100px 10%;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0d47a1;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.destaque{
+    background:#e3f2fd;
+}
+
+.objetivos{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.objetivo{
+    background:white;
+    width:300px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.contato form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    padding:15px;
+    border:none;
+    background:#0d47a1;
+    color:white;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .hamburger{
+        display:flex;
+    }
+
+    .nav-menu{
+        position:fixed;
+        left:-100%;
+        top:70px;
+        width:100%;
+        flex-direction:column;
+        background:#0d47a1;
+        text-align:center;
+        padding:20px 0;
+        transition:.4s;
+    }
+
+    .nav-menu.active{
+        left:0;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+}
